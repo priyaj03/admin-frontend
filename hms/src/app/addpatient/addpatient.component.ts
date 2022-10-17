@@ -14,8 +14,8 @@ export class AddpatientComponent implements OnInit {
     paddress:new FormControl(),
     page:new FormControl(),
     symptoms:new FormControl(),
-    email:new FormControl(),
-    phno:new FormControl(),
+    emailid:new FormControl(),
+    mobile:new FormControl(),
   })
   storeMsg :string =""
   constructor(public rds:RetrieveDoctorsService) { }
