@@ -1,0 +1,16 @@
+<div>
+    <h2>Add Doctor</h2>
+    <form [formGroup]="doctorRef" (ngSubmit)="saveDoctorDetails()">
+        Doctor Id : <input type="number" formControlName="did"><br/> <br/>
+        Name : <input type="text" formControlName="dname"><br/> <br/>
+        Status : <input type="text" formControlName="dstatus"><br/> <br/>
+        Age : <input type="number" formControlName="dage"><br/> <br/>
+        Gender : <input type="gender" formControlName="dgender"><br/><br/>
+        Specialization : <input type="text" formControlName="spec"><br/><br/>
+        Mobile Number : <input type="number" formControlName="phno"><br/><br/>
+        Address : <input type="text" formControlName="address"><br/><br/>
+        <input type="submit" value="Save Doctor"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>
