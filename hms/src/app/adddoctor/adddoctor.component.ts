@@ -10,14 +10,13 @@ import { RetrieveDoctorsService } from '../retrieve-doctors.service';
 })
 export class AdddoctorComponent implements OnInit {
   doctorRef = new FormGroup({
-    did:new FormControl(),
     dname:new FormControl(),
-    dstatus:new FormControl(),
     dage:new FormControl(),
     dgender:new FormControl(),
     spec:new FormControl(),
     phno:new FormControl(),
     address:new FormControl(),
+    email:new FormControl()
   })
   storeMsg :string =""
 

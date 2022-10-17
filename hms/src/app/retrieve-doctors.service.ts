@@ -6,13 +6,18 @@ import { RetrieveDoctors } from './retrieve-doctors';
   providedIn: 'root'
 })
 export class RetrieveDoctorsService {
-  baseUrl:string ="http://localhost:9090/doctor"
+  baseUrl:string ="http://localhost:9090/admin"
   constructor(public http:HttpClient) { }
 
   saveDoctorDetails(doctor:any):Observable<string> {
-    return this.http.post(this.baseUrl+"/saveDoctorDetails",doctor,{responseType:"text"});
+    return this.http.post(this.baseUrl+"/sdd",doctor,{responseType:"text"});
   }
-  findAllDoctors():Observable<RetrieveDoctors[]> {
+
+  savePatientDetails(patient:any):Observable<string> {
+    return this.http.post(this.baseUrl+"/spd",patient,{responseType:"text"});
+  }
+
+   findAllDoctors():Observable<RetrieveDoctors[]> {
     return this.http.get<RetrieveDoctors[]>(this.baseUrl+"/findAllDoctors");
   }
 

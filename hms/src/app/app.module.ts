@@ -10,6 +10,7 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { RetrieveDoctorsComponent } from './retrieve-doctors/retrieve-doctors.component';
 import { AdddoctorComponent } from './adddoctor/adddoctor.component';
+import { AddpatientComponent } from './addpatient/addpatient.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { AdddoctorComponent } from './adddoctor/adddoctor.component';
     LoginComponent,
     AdminDashboardComponent,
     RetrieveDoctorsComponent,
-    AdddoctorComponent
+    AdddoctorComponent,
+    AddpatientComponent
   ],
   imports: [
     BrowserModule,
